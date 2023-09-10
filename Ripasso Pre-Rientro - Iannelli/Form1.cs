@@ -82,5 +82,13 @@ namespace Ripasso_Pre_Rientro___Iannelli
                 MessageBox.Show("Compilare i campi correttamente.");
             }
         }
+
+        private void Azione6_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Iannelli.Azione6().Length; i++)
+            {
+                listView1.Items.Add(Iannelli.Azione6()[i]);
+            }
+        }
     }
 }

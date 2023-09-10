@@ -42,6 +42,8 @@
             this.TipoSosta = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Azione5 = new System.Windows.Forms.Button();
+            this.Azione6 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // Azione1
@@ -168,11 +170,33 @@
             this.Azione5.UseVisualStyleBackColor = true;
             this.Azione5.Click += new System.EventHandler(this.Azione5_Click);
             // 
+            // Azione6
+            // 
+            this.Azione6.Location = new System.Drawing.Point(36, 531);
+            this.Azione6.Name = "Azione6";
+            this.Azione6.Size = new System.Drawing.Size(117, 55);
+            this.Azione6.TabIndex = 14;
+            this.Azione6.Text = "Azione 6";
+            this.Azione6.UseVisualStyleBackColor = true;
+            this.Azione6.Click += new System.EventHandler(this.Azione6_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(578, 40);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(440, 685);
+            this.listView1.TabIndex = 15;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.Azione6);
             this.Controls.Add(this.Azione5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TipoSosta);
@@ -211,6 +235,8 @@
         private System.Windows.Forms.TextBox TipoSosta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Azione5;
+        private System.Windows.Forms.Button Azione6;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
