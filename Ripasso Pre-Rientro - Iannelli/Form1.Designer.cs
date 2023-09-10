@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Azione1 = new System.Windows.Forms.Button();
             this.Azione2 = new System.Windows.Forms.Button();
             this.Azione3 = new System.Windows.Forms.Button();
             this.Azione3Avanzato = new System.Windows.Forms.Button();
-            this.Azione4 = new System.Windows.Forms.Button();
             this.NomeZona = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Attuazione = new System.Windows.Forms.TextBox();
@@ -47,21 +45,12 @@
             this.Azione7 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.Ricerca = new System.Windows.Forms.TextBox();
+            this.Azione8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Azione1
-            // 
-            this.Azione1.Location = new System.Drawing.Point(36, 44);
-            this.Azione1.Name = "Azione1";
-            this.Azione1.Size = new System.Drawing.Size(117, 34);
-            this.Azione1.TabIndex = 0;
-            this.Azione1.Text = "Azione 1";
-            this.Azione1.UseVisualStyleBackColor = true;
-            this.Azione1.Click += new System.EventHandler(this.Azione1_Click);
             // 
             // Azione2
             // 
-            this.Azione2.Location = new System.Drawing.Point(36, 92);
+            this.Azione2.Location = new System.Drawing.Point(39, 44);
             this.Azione2.Name = "Azione2";
             this.Azione2.Size = new System.Drawing.Size(117, 34);
             this.Azione2.TabIndex = 1;
@@ -71,7 +60,7 @@
             // 
             // Azione3
             // 
-            this.Azione3.Location = new System.Drawing.Point(36, 140);
+            this.Azione3.Location = new System.Drawing.Point(39, 92);
             this.Azione3.Name = "Azione3";
             this.Azione3.Size = new System.Drawing.Size(117, 32);
             this.Azione3.TabIndex = 2;
@@ -81,23 +70,13 @@
             // 
             // Azione3Avanzato
             // 
-            this.Azione3Avanzato.Location = new System.Drawing.Point(36, 189);
+            this.Azione3Avanzato.Location = new System.Drawing.Point(39, 141);
             this.Azione3Avanzato.Name = "Azione3Avanzato";
             this.Azione3Avanzato.Size = new System.Drawing.Size(117, 41);
             this.Azione3Avanzato.TabIndex = 3;
             this.Azione3Avanzato.Text = "Azione 3 Avanzato";
             this.Azione3Avanzato.UseVisualStyleBackColor = true;
             this.Azione3Avanzato.Click += new System.EventHandler(this.Azione3Avanzato_Click);
-            // 
-            // Azione4
-            // 
-            this.Azione4.Location = new System.Drawing.Point(36, 248);
-            this.Azione4.Name = "Azione4";
-            this.Azione4.Size = new System.Drawing.Size(117, 29);
-            this.Azione4.TabIndex = 4;
-            this.Azione4.Text = "Azione 4";
-            this.Azione4.UseVisualStyleBackColor = true;
-            this.Azione4.Click += new System.EventHandler(this.Azione4_Click);
             // 
             // NomeZona
             // 
@@ -165,7 +144,7 @@
             // 
             // Azione5
             // 
-            this.Azione5.Location = new System.Drawing.Point(36, 295);
+            this.Azione5.Location = new System.Drawing.Point(39, 247);
             this.Azione5.Name = "Azione5";
             this.Azione5.Size = new System.Drawing.Size(117, 31);
             this.Azione5.TabIndex = 13;
@@ -175,7 +154,7 @@
             // 
             // Azione6
             // 
-            this.Azione6.Location = new System.Drawing.Point(36, 341);
+            this.Azione6.Location = new System.Drawing.Point(39, 293);
             this.Azione6.Name = "Azione6";
             this.Azione6.Size = new System.Drawing.Size(117, 31);
             this.Azione6.TabIndex = 14;
@@ -195,7 +174,7 @@
             // 
             // Azione7
             // 
-            this.Azione7.Location = new System.Drawing.Point(36, 390);
+            this.Azione7.Location = new System.Drawing.Point(39, 342);
             this.Azione7.Name = "Azione7";
             this.Azione7.Size = new System.Drawing.Size(117, 35);
             this.Azione7.TabIndex = 16;
@@ -219,11 +198,22 @@
             this.Ricerca.Size = new System.Drawing.Size(100, 22);
             this.Ricerca.TabIndex = 17;
             // 
+            // Azione8
+            // 
+            this.Azione8.Location = new System.Drawing.Point(39, 393);
+            this.Azione8.Name = "Azione8";
+            this.Azione8.Size = new System.Drawing.Size(117, 35);
+            this.Azione8.TabIndex = 19;
+            this.Azione8.Text = "Azione 8";
+            this.Azione8.UseVisualStyleBackColor = true;
+            this.Azione8.Click += new System.EventHandler(this.Azione8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.Azione8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Ricerca);
             this.Controls.Add(this.Azione7);
@@ -238,11 +228,9 @@
             this.Controls.Add(this.Attuazione);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NomeZona);
-            this.Controls.Add(this.Azione4);
             this.Controls.Add(this.Azione3Avanzato);
             this.Controls.Add(this.Azione3);
             this.Controls.Add(this.Azione2);
-            this.Controls.Add(this.Azione1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -252,12 +240,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Azione1;
         private System.Windows.Forms.Button Azione2;
         private System.Windows.Forms.Button Azione3;
         private System.Windows.Forms.Button Azione3Avanzato;
-        private System.Windows.Forms.Button Azione4;
         private System.Windows.Forms.TextBox NomeZona;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Attuazione;
@@ -272,6 +257,7 @@
         private System.Windows.Forms.Button Azione7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Ricerca;
+        private System.Windows.Forms.Button Azione8;
     }
 }
 

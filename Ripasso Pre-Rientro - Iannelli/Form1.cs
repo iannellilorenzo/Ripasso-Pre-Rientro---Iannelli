@@ -24,6 +24,8 @@ namespace Ripasso_Pre_Rientro___Iannelli
             if (File.Exists(file2))
             {
                 MessageBox.Show("File presente.");
+                Iannelli.Azione1();
+                Iannelli.Azione4();
             }
             else
             {
@@ -35,11 +37,6 @@ namespace Ripasso_Pre_Rientro___Iannelli
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Azione1_Click(object sender, EventArgs e)
-        {
-            Iannelli.Azione1();
         }
 
         private void Azione2_Click(object sender, EventArgs e)
@@ -62,11 +59,6 @@ namespace Ripasso_Pre_Rientro___Iannelli
             }
 
             MessageBox.Show($"La lunghezza massima di ogni campo è: \n{lungs}");
-        }
-
-        private void Azione4_Click(object sender, EventArgs e)
-        {
-            Iannelli.Azione4();
         }
 
         private void Azione5_Click(object sender, EventArgs e)
@@ -104,6 +96,22 @@ namespace Ripasso_Pre_Rientro___Iannelli
             else
             {
                 MessageBox.Show($"Elemento corrispondente trovato all'ID: {Iannelli.Azione7(Ricerca.Text)}");
+            }
+        }
+
+        private void Azione8_Click(object sender, EventArgs e)
+        {
+            if (Iannelli.Azione8(NomeZona.Text, Attuazione.Text, Data.Text, TipoSosta.Text, Ricerca.Text) == -2)
+            {
+                MessageBox.Show("Compilare correttamente i campi");
+            }
+            else if (Iannelli.Azione8(NomeZona.Text, Attuazione.Text, Data.Text, TipoSosta.Text, Ricerca.Text) == -1)
+            {
+                MessageBox.Show("Elemento corrispondente all'ID inserito inesistente.");
+            }
+            else
+            {
+                MessageBox.Show("Azione eseguita correttamente");
             }
         }
     }
