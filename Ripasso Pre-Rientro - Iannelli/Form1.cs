@@ -46,5 +46,10 @@ namespace Ripasso_Pre_Rientro___Iannelli
         {
             MessageBox.Show($"Il numero di campi che compone il record è: {Iannelli.Azione2().ToString()}");
         }
+
+        private void Azione3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"La lunghezza massima dei record presenti è: {Iannelli.Azione3().ToString()}");
+        }
     }
 }

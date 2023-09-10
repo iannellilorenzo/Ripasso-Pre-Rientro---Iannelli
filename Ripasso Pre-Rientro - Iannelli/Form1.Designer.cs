@@ -30,6 +30,7 @@
         {
             this.Azione1 = new System.Windows.Forms.Button();
             this.Azione2 = new System.Windows.Forms.Button();
+            this.Azione3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Azione1
@@ -52,11 +53,22 @@
             this.Azione2.UseVisualStyleBackColor = true;
             this.Azione2.Click += new System.EventHandler(this.Azione2_Click);
             // 
+            // Azione3
+            // 
+            this.Azione3.Location = new System.Drawing.Point(36, 198);
+            this.Azione3.Name = "Azione3";
+            this.Azione3.Size = new System.Drawing.Size(117, 55);
+            this.Azione3.TabIndex = 2;
+            this.Azione3.Text = "Azione 3";
+            this.Azione3.UseVisualStyleBackColor = true;
+            this.Azione3.Click += new System.EventHandler(this.Azione3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.Azione3);
             this.Controls.Add(this.Azione2);
             this.Controls.Add(this.Azione1);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button Azione1;
         private System.Windows.Forms.Button Azione2;
+        private System.Windows.Forms.Button Azione3;
     }
 }
 
