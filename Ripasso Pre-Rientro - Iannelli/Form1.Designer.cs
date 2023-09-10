@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Azione1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Azione1
+            // 
+            this.Azione1.Location = new System.Drawing.Point(129, 135);
+            this.Azione1.Name = "Azione1";
+            this.Azione1.Size = new System.Drawing.Size(117, 55);
+            this.Azione1.TabIndex = 0;
+            this.Azione1.Text = "Azione 1";
+            this.Azione1.UseVisualStyleBackColor = true;
+            this.Azione1.Click += new System.EventHandler(this.Azione1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.Azione1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -43,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Azione1;
     }
 }
 
