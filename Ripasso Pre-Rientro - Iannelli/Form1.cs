@@ -90,5 +90,21 @@ namespace Ripasso_Pre_Rientro___Iannelli
                 listView1.Items.Add(Iannelli.Azione6()[i]);
             }
         }
+
+        private void Azione7_Click(object sender, EventArgs e)
+        {
+            if (Iannelli.Azione7(Ricerca.Text) == -2)
+            {
+                MessageBox.Show("Compilare correttamente i campi.");
+            }
+            else if (Iannelli.Azione7(Ricerca.Text) == -1)
+            {
+                MessageBox.Show("Elemento corrispondente all'ID inserito inesistente.");
+            }
+            else
+            {
+                MessageBox.Show($"Elemento corrispondente trovato all'ID: {Iannelli.Azione7(Ricerca.Text)}");
+            }
+        }
     }
 }

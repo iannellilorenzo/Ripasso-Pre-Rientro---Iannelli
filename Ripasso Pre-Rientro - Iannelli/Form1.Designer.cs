@@ -44,13 +44,16 @@
             this.Azione5 = new System.Windows.Forms.Button();
             this.Azione6 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.Azione7 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Ricerca = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Azione1
             // 
             this.Azione1.Location = new System.Drawing.Point(36, 44);
             this.Azione1.Name = "Azione1";
-            this.Azione1.Size = new System.Drawing.Size(117, 55);
+            this.Azione1.Size = new System.Drawing.Size(117, 34);
             this.Azione1.TabIndex = 0;
             this.Azione1.Text = "Azione 1";
             this.Azione1.UseVisualStyleBackColor = true;
@@ -58,9 +61,9 @@
             // 
             // Azione2
             // 
-            this.Azione2.Location = new System.Drawing.Point(36, 117);
+            this.Azione2.Location = new System.Drawing.Point(36, 92);
             this.Azione2.Name = "Azione2";
-            this.Azione2.Size = new System.Drawing.Size(117, 55);
+            this.Azione2.Size = new System.Drawing.Size(117, 34);
             this.Azione2.TabIndex = 1;
             this.Azione2.Text = "Azione 2";
             this.Azione2.UseVisualStyleBackColor = true;
@@ -68,9 +71,9 @@
             // 
             // Azione3
             // 
-            this.Azione3.Location = new System.Drawing.Point(36, 198);
+            this.Azione3.Location = new System.Drawing.Point(36, 140);
             this.Azione3.Name = "Azione3";
-            this.Azione3.Size = new System.Drawing.Size(117, 55);
+            this.Azione3.Size = new System.Drawing.Size(117, 32);
             this.Azione3.TabIndex = 2;
             this.Azione3.Text = "Azione 3";
             this.Azione3.UseVisualStyleBackColor = true;
@@ -78,9 +81,9 @@
             // 
             // Azione3Avanzato
             // 
-            this.Azione3Avanzato.Location = new System.Drawing.Point(36, 284);
+            this.Azione3Avanzato.Location = new System.Drawing.Point(36, 189);
             this.Azione3Avanzato.Name = "Azione3Avanzato";
-            this.Azione3Avanzato.Size = new System.Drawing.Size(117, 55);
+            this.Azione3Avanzato.Size = new System.Drawing.Size(117, 41);
             this.Azione3Avanzato.TabIndex = 3;
             this.Azione3Avanzato.Text = "Azione 3 Avanzato";
             this.Azione3Avanzato.UseVisualStyleBackColor = true;
@@ -88,9 +91,9 @@
             // 
             // Azione4
             // 
-            this.Azione4.Location = new System.Drawing.Point(36, 362);
+            this.Azione4.Location = new System.Drawing.Point(36, 248);
             this.Azione4.Name = "Azione4";
-            this.Azione4.Size = new System.Drawing.Size(117, 55);
+            this.Azione4.Size = new System.Drawing.Size(117, 29);
             this.Azione4.TabIndex = 4;
             this.Azione4.Text = "Azione 4";
             this.Azione4.UseVisualStyleBackColor = true;
@@ -162,9 +165,9 @@
             // 
             // Azione5
             // 
-            this.Azione5.Location = new System.Drawing.Point(36, 446);
+            this.Azione5.Location = new System.Drawing.Point(36, 295);
             this.Azione5.Name = "Azione5";
-            this.Azione5.Size = new System.Drawing.Size(117, 55);
+            this.Azione5.Size = new System.Drawing.Size(117, 31);
             this.Azione5.TabIndex = 13;
             this.Azione5.Text = "Azione 5";
             this.Azione5.UseVisualStyleBackColor = true;
@@ -172,9 +175,9 @@
             // 
             // Azione6
             // 
-            this.Azione6.Location = new System.Drawing.Point(36, 531);
+            this.Azione6.Location = new System.Drawing.Point(36, 341);
             this.Azione6.Name = "Azione6";
-            this.Azione6.Size = new System.Drawing.Size(117, 55);
+            this.Azione6.Size = new System.Drawing.Size(117, 31);
             this.Azione6.TabIndex = 14;
             this.Azione6.Text = "Azione 6";
             this.Azione6.UseVisualStyleBackColor = true;
@@ -190,11 +193,40 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
             // 
+            // Azione7
+            // 
+            this.Azione7.Location = new System.Drawing.Point(36, 390);
+            this.Azione7.Name = "Azione7";
+            this.Azione7.Size = new System.Drawing.Size(117, 35);
+            this.Azione7.TabIndex = 16;
+            this.Azione7.Text = "Azione 7";
+            this.Azione7.UseVisualStyleBackColor = true;
+            this.Azione7.Click += new System.EventHandler(this.Azione7_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(209, 282);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 16);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Ricerca per ID";
+            // 
+            // Ricerca
+            // 
+            this.Ricerca.Location = new System.Drawing.Point(212, 304);
+            this.Ricerca.Name = "Ricerca";
+            this.Ricerca.Size = new System.Drawing.Size(100, 22);
+            this.Ricerca.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Ricerca);
+            this.Controls.Add(this.Azione7);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.Azione6);
             this.Controls.Add(this.Azione5);
@@ -237,6 +269,9 @@
         private System.Windows.Forms.Button Azione5;
         private System.Windows.Forms.Button Azione6;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button Azione7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Ricerca;
     }
 }
 
