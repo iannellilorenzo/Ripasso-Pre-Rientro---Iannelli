@@ -14,8 +14,8 @@ namespace Ripasso_Pre_Rientro___Iannelli
 {
     public partial class Form1 : Form
     {
-        public string file1 = @"iannelli1.csv";
-        public string file2 = @"iannelli.csv";
+        public string file1 = Iannelli.file1;
+        public string file2 = Iannelli.file2;
 
         public Form1()
         {
@@ -40,6 +40,11 @@ namespace Ripasso_Pre_Rientro___Iannelli
         private void Azione1_Click(object sender, EventArgs e)
         {
             Iannelli.Azione1();
+        }
+
+        private void Azione2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Il numero di campi che compone il record è: {Iannelli.Azione2().ToString()}");
         }
     }
 }
