@@ -68,5 +68,19 @@ namespace Ripasso_Pre_Rientro___Iannelli
         {
             Iannelli.Azione4();
         }
+
+        private void Azione5_Click(object sender, EventArgs e)
+        {
+            bool azione5 = Iannelli.Azione5(NomeZona.Text, Attuazione.Text, Data.Text, TipoSosta.Text);
+
+            if (azione5)
+            {
+                MessageBox.Show("Azione eseguita correttamente.");
+            }
+            else
+            {
+                MessageBox.Show("Compilare i campi correttamente.");
+            }
+        }
     }
 }
