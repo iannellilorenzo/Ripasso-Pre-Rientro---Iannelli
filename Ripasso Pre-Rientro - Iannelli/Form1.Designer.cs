@@ -32,6 +32,7 @@
             this.Azione2 = new System.Windows.Forms.Button();
             this.Azione3 = new System.Windows.Forms.Button();
             this.Azione3Avanzato = new System.Windows.Forms.Button();
+            this.Azione4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Azione1
@@ -74,11 +75,22 @@
             this.Azione3Avanzato.UseVisualStyleBackColor = true;
             this.Azione3Avanzato.Click += new System.EventHandler(this.Azione3Avanzato_Click);
             // 
+            // Azione4
+            // 
+            this.Azione4.Location = new System.Drawing.Point(36, 362);
+            this.Azione4.Name = "Azione4";
+            this.Azione4.Size = new System.Drawing.Size(117, 55);
+            this.Azione4.TabIndex = 4;
+            this.Azione4.Text = "Azione 4";
+            this.Azione4.UseVisualStyleBackColor = true;
+            this.Azione4.Click += new System.EventHandler(this.Azione4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.Azione4);
             this.Controls.Add(this.Azione3Avanzato);
             this.Controls.Add(this.Azione3);
             this.Controls.Add(this.Azione2);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.Button Azione2;
         private System.Windows.Forms.Button Azione3;
         private System.Windows.Forms.Button Azione3Avanzato;
+        private System.Windows.Forms.Button Azione4;
     }
 }
 

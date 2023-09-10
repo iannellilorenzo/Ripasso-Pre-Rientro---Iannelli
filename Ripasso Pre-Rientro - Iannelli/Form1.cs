@@ -55,12 +55,18 @@ namespace Ripasso_Pre_Rientro___Iannelli
         private void Azione3Avanzato_Click(object sender, EventArgs e)
         {
             string lungs = "";
+
             for (int i = 0; i < Iannelli.Azione3Avanzato().Length; i++)
             {
                 lungs += Iannelli.Azione3Avanzato()[i] + "\n";
             }
 
             MessageBox.Show($"La lunghezza massima di ogni campo è: \n{lungs}");
+        }
+
+        private void Azione4_Click(object sender, EventArgs e)
+        {
+            Iannelli.Azione4();
         }
     }
 }
