@@ -51,5 +51,16 @@ namespace Ripasso_Pre_Rientro___Iannelli
         {
             MessageBox.Show($"La lunghezza massima dei record presenti è: {Iannelli.Azione3().ToString()}");
         }
+
+        private void Azione3Avanzato_Click(object sender, EventArgs e)
+        {
+            string lungs = "";
+            for (int i = 0; i < Iannelli.Azione3Avanzato().Length; i++)
+            {
+                lungs += Iannelli.Azione3Avanzato()[i] + "\n";
+            }
+
+            MessageBox.Show($"La lunghezza massima di ogni campo è: \n{lungs}");
+        }
     }
 }
