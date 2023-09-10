@@ -46,6 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Ricerca = new System.Windows.Forms.TextBox();
             this.Azione8 = new System.Windows.Forms.Button();
+            this.Azione9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Azione2
@@ -208,11 +209,22 @@
             this.Azione8.UseVisualStyleBackColor = true;
             this.Azione8.Click += new System.EventHandler(this.Azione8_Click);
             // 
+            // Azione9
+            // 
+            this.Azione9.Location = new System.Drawing.Point(39, 448);
+            this.Azione9.Name = "Azione9";
+            this.Azione9.Size = new System.Drawing.Size(117, 35);
+            this.Azione9.TabIndex = 20;
+            this.Azione9.Text = "Azione 9";
+            this.Azione9.UseVisualStyleBackColor = true;
+            this.Azione9.Click += new System.EventHandler(this.Azione9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 737);
+            this.Controls.Add(this.Azione9);
             this.Controls.Add(this.Azione8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Ricerca);
@@ -258,6 +270,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Ricerca;
         private System.Windows.Forms.Button Azione8;
+        private System.Windows.Forms.Button Azione9;
     }
 }
 

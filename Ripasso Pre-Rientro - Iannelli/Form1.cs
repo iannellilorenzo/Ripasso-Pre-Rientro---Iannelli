@@ -114,5 +114,10 @@ namespace Ripasso_Pre_Rientro___Iannelli
                 MessageBox.Show("Azione eseguita correttamente");
             }
         }
+
+        private void Azione9_Click(object sender, EventArgs e)
+        {
+            Iannelli.Azione9(Ricerca.Text);
+        }
     }
 }
